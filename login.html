@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Sentra Tenun Lintau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="img/logo.png" class="logo" alt="">Logo</a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="lg-bag"><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                <li id="account"><a href="login.html"><i class="fa fa-user-circle" aria-hidden="true"></i></a></li>
+                <a href="#" id="close"><i class="fa fa-times" aria-hidden="true"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+            <i id="bar" class="fa fa-outdent" aria-hidden="true"></i>
+        </div>
+    </section>
+
+    <section class="account-page">
+        <div class="container">
+            <div class="row">
+    
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Masuk</span>
+                            <span onclick="register()">Daftar</span>
+                            <hr id="Indicator">
+                        </div>
+    
+                        <form id="LoginForm">
+                            <h3>Selamat Datang Kembali!👋</h3>
+                            <br>
+                            <input type="text" placeholder="Nama Pengguna">
+                            <input type="password" placeholder="Kata Sandi">
+                            <br>
+                            <a href="">Lupa kata sandi?</a> <br>
+                            <button type="submit" class="btn">Masuk</button>
+                            <br>
+                            <a href=""><u>Belum memiliki akun? Daftar</u></a>
+                        </form>
+    
+                        <form id="RegForm">
+                            <h3>Buat akun baru</h3>
+                            <br>
+                            <input type="text" autocomplete="off" placeholder="Nama Pengguna">
+                            <input type="email" autocomplete="off" placeholder="Email">
+                            <input type="password" autocomplete="off" placeholder="Kata Sandi">
+                            <button type="submit" class="btn">Buat Akun</button>
+                            <br>
+                            <a href=""><u>Sudah punya akun? Masuk</u></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Kontak</h4>
+            <p><strong>Alamat:</strong> Sentra Tenun Lintau, Lintau Buo, Sumatera Barat, Indonesia</p>
+            <p><strong>Telepon:</strong> +62 12345678</p>
+            <p><strong>Jam Kerja:</strong> 09:00 - 17:00, Senin - Sabtu</p>
+            <div class="follow">
+                <h4>ikuti kami</h4>
+                <div class="icon">
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col">
+            <h4>Tentang</h4>
+            <a href="#">Tentang kami</a>
+            <a href="#">Informasi Pengiriman</a>
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Syarat & Ketentuan</a>
+            <a href="#">Hubungi kami</a>
+        </div>
+    
+        <div class="col">
+            <h4>Akun Saya</h4>
+            <a href="#">Masuk</a>
+            <a href="#">Lihat keranjang</a>
+            <a href="#">Daftar keinginan saya</a>
+            <a href="#">Lacak pesanan saya</a>
+            <a href="#">Bantuan</a>
+        </div>
+    
+        <div class="col install">
+            <h4>Pasang Aplikasi</h4>
+            <p>Dari App Store atau Google Play</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Gerbang Pembayaran Aman</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+    
+        <div class="copyright">
+            <p>© 2025, Sentra Tenun Lintau - Ecommerce</p>
+        </div>
+    </footer>
+    
+
+    <script>
+
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register() {
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translatex(0px)";
+            Indicator.style.transform = "translatex(100px)";
+        }
+        function login() {
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translatex(300px)";
+            Indicator.style.transform = "translatex(0px)";
+        }
+
+
+    </script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
